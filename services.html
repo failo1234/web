@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sal y Fe - Nuestros Servicios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+         :root {
+            --primary: #5c2416;
+            --secondary: #ac782b;
+            --accent: #ff9800;
+            --dark: #101827;
+            --light: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        :root {
+    --color-gold: #D4AF37;
+    --color-gold-light: #E5C76B;
+    --color-accent: #8E6516;
+    --color-dark: #7c5924;
+    --color-text-light: #F5F5F5;
+}
+
+        :root {
+            --gold-primary: #d4af37;
+            --gold-light: #f1e0ac;
+            --gold-dark: #aa8c2c;
+            --gold-accent: #e6c566;
+            --cream: #f9f5e7;
+            --dark-brown: #3a2f27;
+            --light-brown: #6d5d4b;
+        }
+    /* Variables */
+    :root {
+        --gold: #D4AF37;
+        --gold-light: #F1E5AC;
+        --gold-dark: #9B7E1D;
+        --primary: #214E3B;
+        --light: #F8F9FA;
+    }
+
+:root {
+            --gold-primary: #d4af37;
+            --gold-light: #f1e0ac;
+            --gold-dark: #aa8c2c;
+            --gold-accent: #e6c566;
+            --cream: #f9f5e7;
+            --dark-brown: #3a2f27;
+            --light-brown: #6d5d4b;
+            --off-white: #f8f8f2;
+        }
+    /* Header elegante y llamativo */
+    .navbar-brand {
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s ease;
+    }
+    
+    .navbar-brand:hover {
+        transform: scale(1.05);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .header-premium {
+        background: linear-gradient(135deg, #8b4513 0%, #d4a95c 100%);
+        box-shadow: 0 4px 15px rgba(139, 69, 19, 0.7);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .header-premium::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgogIDxmaWx0ZXIgaWQ9Im5vaXNlIj4KICAgIDxmZVR1cmJ1bGVuY2UgdHlwZT0iZnJhY3RhbE5vaXNlIiBiYXNlRnJlcXVlbmN5PSIwLjA1IiBudW1PY3RhdmVzPSIyIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIj48L2ZlVHVyYnVsZW5jZT4KICAgIDxmZURpZmZ1c2VMaWdodGluZyBsaWdodGluZy1jb2xvcj0iI2ZmZiIgc3VyZmFjZVNjYWxlPSIwLjUiPgogICAgICA8ZmVEaXN0YW50TGlnaHQgYXppbXV0aD0iNDUiIGVsZXZhdGlvbj0iNjAiPjwvZmVEaXN0YW50TGlnaHQ+CiAgICA8L2ZlRGlmZnVzZUxpZ2h0aW5nPgogICAgPGZlQmxlbmQgbW9kZT0ib3ZlcmxheSI+PC9mZUJsZW5kPgogIDwvZmlsdGVyPgogIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNub2lzZSkiIG9wYWNpdHk9IjAuMDUiPjwvcmVjdD4KPC9zdmc+') repeat;
+        opacity: 0.5;
+        z-index: 0;
+    }
+    
+    .nav-link {
+        font-weight: 600;
+        font-size: 1.05rem;
+        margin: 0 12px;
+        padding: 8px 5px;
+        transition: all 0.4s ease;
+        position: relative;
+        z-index: 1;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .nav-link::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background: #fff;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        border-radius: 2px;
+        box-shadow: 0 1px 5px rgba(255, 255, 255, 0.7);
+    }
+    
+    .nav-link:hover {
+        color: #ffffff;
+        transform: translateY(-2px);
+    }
+    
+    .nav-link:hover::before {
+        width: 100%;
+    }
+    
+    .nav-link.active {
+        color: #ffffff;
+        font-weight: 700;
+    }
+    
+    .nav-link.active::before {
+        width: 80%;
+        background: #ffffff;
+        height: 3px;
+    }
+    
+    .brand-container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 60px;
+        padding: 5px 15px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        transition: all 0.4s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .brand-container:hover {
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    
+    .logo-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .brand-container:hover .logo-img {
+        transform: rotate(5deg) scale(1.05);
+    }
+    
+    .btn-contacto {
+        border-radius: 50px;
+        padding: 10px 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.4s ease;
+        border: 2px solid #ffffff;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+    
+    .btn-contacto:hover {
+        background: #ffffff;
+        color: #8b4513;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+    
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            background: rgba(139, 69, 19, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-link {
+            margin: 10px 0;
+            text-align: center;
+        }
+        
+        .nav-link::before {
+            bottom: -5px;
+        }
+    }
+        
+              /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 80vh;
+            min-height: 500px;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.7);
+        }
+        
+        .hero-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1;
+        }
+        
+        .hero-heading {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.3);
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-subheading {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1.2s ease;
+        }
+        
+        
+        /* Estilos de Tarjetas de Servicios */
+.service-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    background-color: #fff;
+}
+
+.service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.15);
+}
+
+/* Contenedor del ícono */
+.service-icon-wrapper {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(212, 175, 55, 0.1);
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-icon-bg {
+    transform: scale(1.2);
+    background-color: rgba(212, 175, 55, 0.15);
+}
+
+.service-icon {
+    position: relative;
+    z-index: 1;
+    font-size: 2.5rem;
+    color: var(--color-gold);
+    transition: transform 0.4s ease, color 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.15);
+    color: var(--color-accent);
+}
+
+/* Etiqueta decorativa */
+.specialty-tag {
+    display: inline-block;
+    padding: 0.3rem 1.2rem;
+    background-color: rgba(212, 175, 55, 0.1);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .specialty-tag {
+    background-color: rgba(212, 175, 55, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Ícono de especialidad */
+.specialty-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Animación para los elementos AOS */
+[data-aos] {
+    transition-duration: 800ms;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+        
+ /* Estilos generales de la sección */
+.process-section {
+    overflow: hidden;
+}
+
+.process-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+}
+
+/* Línea de tiempo del proceso */
+.process-timeline {
+    padding: 30px 0;
+}
+
+.process-main-line {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: calc(100% - 60px);
+    background: linear-gradient(to bottom, var(--color-gold-light), var(--color-gold), var(--color-gold-light));
+    opacity: 0.5;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .process-main-line {
+        display: block;
+    }
+}
+
+/* Elementos del proceso */
+.process-item {
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+}
+
+/* Número del proceso */
+.process-number-wrapper {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+}
+
+.process-number-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.3) 0%, rgba(212, 175, 55, 0) 70%);
+    border-radius: 50%;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+    50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.3; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+}
+
+.process-number {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-accent) 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(142, 101, 22, 0.3);
+    transition: all 0.3s ease;
+}
+
+.process-item:hover .process-number {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(142, 101, 22, 0.4);
+}
+
+/* Contenido del proceso */
+.process-content {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    z-index: 1;
+    height: 100%;
+}
+
+.process-item:hover .process-content {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.1);
+}
+
+/* Ícono pequeño decorativo */
+.process-icon-small {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(212, 175, 55, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gold);
+    font-size: 0.8rem;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.process-item:hover .process-icon-small {
+    background-color: rgba(212, 175, 55, 0.2);
+    transform: rotate(15deg);
+}
+
+/* Conectores móviles */
+.process-mobile-connector {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 25px;
+    background: linear-gradient(to bottom, var(--color-gold), var(--color-gold-light));
+    opacity: 0.5;
+}
+
+/* Badge de garantía */
+.guarantee-badge {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed var(--color-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.guarantee-inner {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(212, 175, 55, 0.05);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.guarantee-badge:hover {
+    transform: rotate(5deg);
+}
+
+.guarantee-badge:hover .guarantee-inner {
+    background-color: rgba(212, 175, 55, 0.1);
+}
+         
+         /* Testimonios */
+        .testimonial-section {
+            background-color: var(--cream);
+            position: relative;
+            padding: 6rem 0;
+        }
+        
+        .testimonial-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 12px;
+            border: none;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold-light), var(--gold-primary), var(--gold-dark));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.15);
+        }
+        
+        .testimonial-card:hover::before {
+            opacity: 1;
+        }
+        
+        .testimonial-quote {
+            position: relative;
+            padding-left: 2rem;
+            font-style: italic;
+        }
+        
+        .testimonial-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -15px;
+            font-size: 3.5rem;
+            color: var(--gold-primary);
+            font-family: 'Playfair Display', 'Georgia', serif;
+            opacity: 0.7;
+        }
+        
+        .client-image {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--gold-primary);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.25);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold-light), var(--gold-primary), var(--gold-dark));
+        }
+        
+        .gold-text {
+            color: var(--gold-dark);
+            font-weight: 600;
+        }
+        
+        .star-rating {
+            color: var(--gold-primary);
+        }
+        
+        .client-info h5 {
+            color: var(--dark-brown);
+            font-weight: 600;
+        }
+        
+        .client-info p {
+            color: var(--light-brown);
+            font-size: 0.9rem;
+        }
+        
+        .quote-icon {
+            position: absolute;
+            color: var(--gold-light);
+            opacity: 0.1;
+            font-size: 8rem;
+            z-index: 0;
+            right: 10px;
+            bottom: 10px;
+        }
+        
+        .ornament {
+            position: absolute;
+            opacity: 0.05;
+            width: 150px;
+            height: 150px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23d4af37' d='M50 0 L100 50 L50 100 L0 50 Z'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        .ornament-1 {
+            top: 5%;
+            left: 5%;
+        }
+        
+        .ornament-2 {
+            bottom: 5%;
+            right: 5%;
+            transform: rotate(45deg);
+        }
+   
+         body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--light-brown);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--off-white);
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .faq-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: var(--dark-brown);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold-light), var(--gold-primary), var(--gold-dark));
+        }
+        
+        .gold-text {
+            color: var(--gold-dark);
+            font-weight: 600;
+        }
+        
+        .accordion {
+            --bs-accordion-border-width: 0;
+            --bs-accordion-border-radius: 0.75rem;
+            --bs-accordion-inner-border-radius: 0.75rem;
+        }
+        
+        .accordion-item {
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 0.75rem !important;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .accordion-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.1);
+        }
+        
+        .accordion-button {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--dark-brown);
+            background-color: white;
+            padding: 1.25rem 1.5rem;
+            border-radius: 0.75rem !important;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .accordion-button::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--gold-light), var(--gold-primary), var(--gold-dark));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .accordion-button:hover::before {
+            opacity: 1;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            color: var(--gold-dark);
+            background-color: white;
+            box-shadow: none;
+        }
+        
+        .accordion-button:not(.collapsed)::before {
+            opacity: 1;
+        }
+        
+        .accordion-button:not(.collapsed)::after {
+            color: var(--gold-primary);
+            transform: rotate(180deg);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23d4af37' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+        }
+        
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%236d5d4b' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(212, 175, 55, 0.25);
+        }
+        
+        .accordion-body {
+            padding: 1.5rem;
+            background-color: white;
+            color: var(--light-brown);
+            line-height: 1.7;
+        }
+        
+        .question-icon {
+            margin-right: 12px;
+            color: var(--gold-primary);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--dark-brown), var(--light-brown));
+            position: relative;
+            padding: 5rem 0;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.05'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.15;
+        }
+        
+        .cta-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--gold-light), var(--gold-primary), var(--gold-dark));
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-title {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--off-white);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .cta-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gold-primary);
+        }
+        
+        .cta-text {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .cta-btn {
+            background: linear-gradient(135deg, var(--gold-light), var(--gold-primary));
+            color: var(--dark-brown);
+            border: none;
+            font-weight: 600;
+            padding: 0.8rem 2.5rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-dark));
+            color: white;
+        }
+        
+        .ornament {
+            position: absolute;
+            opacity: 0.05;
+            width: 150px;
+            height: 150px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23d4af37' d='M50 0 L100 50 L50 100 L0 50 Z'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        .ornament-1 {
+            top: 10%;
+            left: 5%;
+            transform: rotate(30deg);
+        }
+        
+        .ornament-2 {
+            bottom: 10%;
+            right: 5%;
+            transform: rotate(45deg);
+        }
+        
+        .gold-divider {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+            margin: 0;
+            border: none;
+        }
+        /* Footer */
+footer {
+    background: linear-gradient(135deg, #57362e, #28772c); /* marrón a verde */
+    color: #fff;
+}
+
+.footer-link {
+    color: #d7ccc8; /* marrón claro */
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #c8e6c9; /* verde claro */
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(230, 223, 223, 0.1);
+    color: #ffffff;
+    margin: 0 8px;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #81c784; /* verde suave */
+    transform: translateY(-5px);
+}
+
+     
+        
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+        
+        /* Hover effects */
+        .btn-tech {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border: none;
+            color: white;
+            transition: all 0.3s;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .btn-tech:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--secondary), var(--primary));
+            transition: all 0.5s;
+            z-index: -1;
+        }
+        
+        .btn-tech:hover:before {
+            width: 100%;
+        }
+        
+        /* Toast notifications */
+        .toast-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1060;
+        }
+
+          
+
+/* Enlace suave de scroll */
+.scroll-link {
+    cursor: pointer;
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS personalizado para mejorar el sitio -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+ <!-- Header mejorado -->
+<header class="header-premium py-3 sticky-top">
+    <div class="container position-relative" style="z-index: 1;">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand d-flex align-items-center brand-container" href="index.html">
+                    <img src="https://scontent.flim18-3.fna.fbcdn.net/v/t1.15752-9/494576865_622996340769087_1607606692222973774_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fdiqjjuT-yQQ7kNvwHDF2Br&_nc_oc=AdnBwXT1azsdJ0cZD4wMGTRRtm0_Tp-5aBbz8z4yLE-U9kds6aRWUxjnMYOWpxIwHM8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-3.fna&oh=03_Q7cD2AEa6tRZWsaN-a03AeUUJMFn4akA9F5-R-Ydp4gVp2xwOQ&oe=683B565E" 
+                         alt="Sal y Fe Logo" class="me-3 logo-img">
+                    <span class="brand-text">Sal y Fe</span>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home me-1"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">
+                                <i class="fas fa-hands-helping me-1"></i> Servicios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">
+                                <i class="fas fa-address-card me-1"></i> Contactos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">
+                                <i class="fas fa-shopping-basket me-1"></i> Productos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="d-none d-lg-block">
+                    <a href="contacto.html" class="btn btn-contacto">
+                        <i class="fas fa-phone-alt me-2"></i>Contáctanos
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="https://scontent.flim18-3.fna.fbcdn.net/v/t1.15752-9/494575588_1858093008315869_6652164365407110462_n.png?_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=BT-FXa2T3NwQ7kNvwH3c8N0&_nc_oc=Adkw4h2rMantW5HJ-XKOsTpJd15FinO7z2BK6RmIF2UpKwR5x3XuDDeDgzK2b9cmzoE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-3.fna&oh=03_Q7cD2QFcetygBY2ywGu_vSZM_DFwbIOJXeaR04PS6C3EwhxZOg&oe=684EF583" alt="Imagen de servicios tecnológicos" class="hero-bg">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-6 hero-content text-white">
+                    <h1 class="hero-heading">
+
+                        🍴 Nuestra <span class="text-warning">Oferta Gastronómica</span></h1>
+                    <p class="hero-subheading">Soluciones tecnológicas profesionales para particulares y empresas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Testimonios -->
+<section class="py-5 testimonial-section">
+    <div class="ornament ornament-1"></div>
+    <div class="ornament ornament-2"></div>
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="fw-bold mb-4 section-title">Lo que dicen nuestros <span class="gold-text">Clientes</span></h2>
+                <p class="text-muted">La satisfacción de nuestros clientes es el tesoro más valioso que poseemos</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card testimonial-card shadow p-4 h-100">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://scontent.flim18-1.fna.fbcdn.net/v/t1.15752-9/495047116_1410301356818981_5600726563828509235_n.png?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=IeYaBAAs3SUQ7kNvwHfgMKM&_nc_oc=AdlKlnhYPV_rGeTHHVP1418m7osnhmSaIxs0scMoWhtBQp_TCcqGol24Pnd-nzaxKro&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-1.fna&oh=03_Q7cD2AGzVEoByFn1w1kWC6QgibSUdEP4MKoB2OyCZzF88TCJkg&oe=683A2536" alt="Cliente" class="client-image">
+                        <div class="ms-3 client-info">
+                            <h5 class="mb-0">Carlos Rodríguez</h5>
+                            <p class="mb-0">Emprendedor</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote">
+                        <p class="mb-0">"Estaba en un apuro porque tenía que organizar un evento y no sabía qué comida pedir. Decidí probar con Sal y fe, fue la mejor decisión. La comida estaba buenísima, con un sabor único. ¡Me salvaron el día! Todos quedaron encantados y, sin duda, volveré a pedir."</p>
+                    </div>
+                    <div class="mt-3 star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card testimonial-card shadow p-4 h-100">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://scontent.flim18-1.fna.fbcdn.net/v/t1.15752-9/494574612_1666033174036364_1486297281112317933_n.png?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=kjB4Z3pLZMAQ7kNvwFDMnkP&_nc_oc=AdmAy7XcJTKCCY6ShFmlf5WfISWfsVth8TUyu3EiBqDan6MWmCKvC_rVwo20PzLE2tw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-1.fna&oh=03_Q7cD2AFduDYSPd-umYq6grB9s1XFlXmVSCGhgb7taWaNehy4dA&oe=6839FE99" alt="Cliente" class="client-image">
+                        <div class="ms-3 client-info">
+                            <h5 class="mb-0">Abigail Villazana</h5>
+                            <p class="mb-0">Inversionista Profesional</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote">
+                        <p class="mb-0">"Tuve un problemón porque había perdido todo mi menú para un evento, y pensé que todo se iría al tacho. Pero el equipo de Sal y fe me ayudó a rehacerlo en un abrir y cerrar de ojos. La comida estaba riquísima y llegó puntual. ¡Qué servicio tan chévere!"</p>
+                    </div>
+                    <div class="mt-3 star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mx-auto">
+                <div class="card testimonial-card shadow p-4 h-100">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://scontent.flim18-2.fna.fbcdn.net/v/t1.15752-9/494576969_1113786054111815_1931128130733864117_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=6WkGOuacBucQ7kNvwH79Lpq&_nc_oc=AdmfQRsxjT8MBN03n-l1XTvfys58Za1fQjCJr31e4hr6YBxKE4QG39g9H95vR5QRYNI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-2.fna&oh=03_Q7cD2AEgoWrwXJOe1Mhm4Vuxdmwv2WTx_6KCufWhgZK1LsJ83Q&oe=6839FDE6" alt="Cliente" class="client-image">
+                        <div class="ms-3 client-info">
+                            <h5 class="mb-0">Martín López</h5>
+                            <p class="mb-0">Gerente de Tienda</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-quote">
+                        <p class="mb-0">"Desde que pedimos para nuestras reuniones de trabajo, todo ha sido un éxito. La comida siempre llega bien fresca, presentada con cariño, y el sabor... ¡es como estar en el Medio Oriente! Es nuestra nueva opción favorita para sorprender a los chicos de la oficina."</p>
+                    </div>
+                    <div class="mt-3 star-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+               <!-- FAQ Section -->
+<hr class="gold-divider">
+<section class="faq-section">
+    <div class="ornament ornament-1"></div>
+    <div class="ornament ornament-2"></div>
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="fw-bold mb-4 section-title">Preguntas <span class="gold-text">Frecuentes</span></h2>
+                <p class="text-muted">Resolvemos tus dudas más comunes sobre nuestros exquisitos servicios gastronómicos</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fas fa-utensils question-icon"></i>
+                                ¿Cuánto tiempo tarda en llegar mi pedido?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                El tiempo de entrega depende de tu ubicación. Generalmente, los pedidos en Lima Metropolitana llegan en 1-2 horas, siempre te informaremos el tiempo estimado de entrega al confirmar tu pedido. Nuestro objetivo es que disfrutes de nuestros platillos con la misma frescura y calidad como si los sirviéramos directamente en nuestra cocina.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fas fa-star question-icon"></i>
+                                ¿Qué pasa si no estoy satisfecho con mi pedido?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Nos aseguramos de que cada plato llegue en su mejor estado y con los mejores sabores. Si por alguna razón no quedas completamente contento con tu pedido, contáctanos y lo solucionaremos lo más rápido posible. Tu satisfacción es nuestra prioridad número uno, y queremos que disfrutes de una experiencia increíble con cada bocado de nuestra comida.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fas fa-calendar-alt question-icon"></i>
+                                ¿Cómo funcionan los planes de catering mensual?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Nuestros planes de catering mensual incluyen una selección de platos árabes para tus reuniones, eventos o celebraciones, con opciones personalizadas según tus necesidades. La suscripción se renueva automáticamente cada mes, pero puedes hacer cambios o cancelarla en cualquier momento. Todos los planes incluyen una consultoría inicial gratuita para conocer tus preferencias y crear el menú ideal para ti, asegurando que cada ocasión sea especial y memorable.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="fas fa-glass-cheers question-icon"></i>
+                                ¿Pueden personalizar un menú para eventos especiales?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, ofrecemos servicios de personalización de menús para eventos, bodas, reuniones o cualquier celebración especial. Nos aseguramos de que el menú se adapte a tus gustos y necesidades, ya sea para opciones vegetarianas, sin gluten o menús especiales. Cada evento es único, por lo que realizamos una consulta inicial gratuita para conocer tus preferencias y ofrecerte el menú ideal para tu ocasión. Nuestro equipo de chefs expertos diseñará una experiencia culinaria excepcional que impresionará a todos tus invitados.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <i class="fas fa-truck question-icon"></i>
+                                ¿Realizan entregas a domicilio?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Sí, ofrecemos entregas a domicilio para todos nuestros platos y menús. Además, contamos con opciones especiales para eventos o pedidos grandes. Las entregas a domicilio dentro de Lima Metropolitana son rápidas y confiables. Para pedidos fuera de la ciudad, también realizamos envíos, con costos adicionales dependiendo de la ubicación y el tamaño del pedido. Garantizamos que cada plato llegará en perfectas condiciones, manteniendo todos los sabores y aromas como recién preparados.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+
+   <!-- Especialidades Culinarias Mejoradas -->
+<section class="specialties-section py-5 mt-5 position-relative">
+    <!-- Elementos decorativos de fondo -->
+    <div class="position-absolute top-0 end-0 d-none d-lg-block" style="opacity: 0.05; z-index: -1;">
+        <img src="/api/placeholder/300/300" alt="Patrón decorativo" style="transform: rotate(45deg);">
+    </div>
+    <div class="position-absolute bottom-0 start-0 d-none d-lg-block" style="opacity: 0.05; z-index: -1;">
+        <img src="/api/placeholder/300/300" alt="Patrón decorativo" style="transform: rotate(-45deg);">
+    </div>
+    
+    <div class="container">
+        <!-- Encabezado de sección con diseño elegante -->
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="position-relative d-inline-block mb-4">
+                    <span class="position-absolute top-50 start-50 translate-middle" style="width: 80px; height: 80px; background-color: var(--color-gold); opacity: 0.1; border-radius: 50%; z-index: -1;"></span>
+                    <img src="https://scontent.flim18-3.fna.fbcdn.net/v/t1.15752-9/494576865_622996340769087_1607606692222973774_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fdiqjjuT-yQQ7kNvwHDF2Br&_nc_oc=AdnBwXT1azsdJ0cZD4wMGTRRtm0_Tp-5aBbz8z4yLE-U9kds6aRWUxjnMYOWpxIwHM8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-3.fna&oh=03_Q7cD2AEa6tRZWsaN-a03AeUUJMFn4akA9F5-R-Ydp4gVp2xwOQ&oe=683B565E" alt="Ícono culinario" class="specialty-icon">
+                </div>
+                <h2 class="display-5 fw-bold mb-3">Especialidades <span style="color: var(--color-accent);">Culinarias</span></h2>
+                <p class="lead mb-0" style="color: var(--color-dark);">Sabores tradicionales con un toque de innovación para satisfacer los paladares más exigentes</p>
+                
+                <!-- Separador decorativo -->
+                <div class="mx-auto mt-4 mb-5" style="width: 150px; height: 3px; background: linear-gradient(to right, transparent, var(--color-gold), transparent);"></div>
+            </div>
+        </div>
+
+        
+        <!-- Tarjetas de servicios con efecto hover mejorado -->
+        <div class="row g-4">
+            <!-- Servicio 1 -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card card h-100 position-relative overflow-hidden p-4">
+                    <!-- Borde decorativo superior -->
+                    <div class="position-absolute top-0 start-0 end-0" style="height: 3px; background: linear-gradient(to right, var(--color-gold-light), var(--color-gold), var(--color-gold-light));"></div>
+                    
+                    <div class="card-body text-center p-2 p-xl-4">
+                        <!-- Círculo decorativo para el ícono -->
+                        <div class="service-icon-wrapper mx-auto mb-4">
+                            <div class="service-icon-bg"></div>
+                            <i class="fas fa-utensils service-icon"></i>
+                        </div>
+                        
+                        <h3 class="fw-bold mb-3" style="color: var(--color-dark);">Preparación de Platos</h3>
+                        <p class="mb-4">Disfrute de nuestra variedad de auténticos platos árabes, elaborados con ingredientes frescos siguiendo recetas tradicionales pasadas de generación en generación.</p>
+                        
+                        <!-- Etiqueta decorativa -->
+                        <div class="specialty-tag">
+                            <span style="font-size: 0.75rem; color: var(--color-dark); font-weight: 600;">AUTÉNTICO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Servicio 2 -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card card h-100 position-relative overflow-hidden p-4">
+                    <div class="position-absolute top-0 start-0 end-0" style="height: 3px; background: linear-gradient(to right, var(--color-gold-light), var(--color-gold), var(--color-gold-light));"></div>
+                    
+                    <div class="card-body text-center p-2 p-xl-4">
+                        <div class="service-icon-wrapper mx-auto mb-4">
+                            <div class="service-icon-bg"></div>
+                            <i class="fas fa-shield-alt service-icon"></i>
+                        </div>
+                        
+                        <h3 class="fw-bold mb-3" style="color: var(--color-dark);">Higiene y Conservación</h3>
+                        <p class="mb-4">Nuestros estrictos protocolos de limpieza y técnicas de conservación garantizan la frescura, sabor y calidad excepcional en cada preparación.</p>
+                        
+                        <div class="specialty-tag">
+                            <span style="font-size: 0.75rem; color: var(--color-dark); font-weight: 600;">CALIDAD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Servicio 3 -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card card h-100 position-relative overflow-hidden p-4">
+                    <div class="position-absolute top-0 start-0 end-0" style="height: 3px; background: linear-gradient(to right, var(--color-gold-light), var(--color-gold), var(--color-gold-light));"></div>
+                    
+                    <div class="card-body text-center p-2 p-xl-4">
+                        <div class="service-icon-wrapper mx-auto mb-4">
+                            <div class="service-icon-bg"></div>
+                            <i class="fas fa-concierge-bell service-icon"></i>
+                        </div>
+                        
+                        <h3 class="fw-bold mb-3" style="color: var(--color-dark);">Catering Personalizado</h3>
+                        <p class="mb-4">Servicio exclusivo para eventos y celebraciones con menús árabes adaptados a sus preferencias, creando experiencias gastronómicas memorables.</p>
+                        
+                        <div class="specialty-tag">
+                            <span style="font-size: 0.75rem; color: var(--color-dark); font-weight: 600;">EXCLUSIVO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Servicio 4 -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card card h-100 position-relative overflow-hidden p-4">
+                    <div class="position-absolute top-0 start-0 end-0" style="height: 3px; background: linear-gradient(to right, var(--color-gold-light), var(--color-gold), var(--color-gold-light));"></div>
+                    
+                    <div class="card-body text-center p-2 p-xl-4">
+                        <div class="service-icon-wrapper mx-auto mb-4">
+                            <div class="service-icon-bg"></div>
+                            <i class="fas fa-glass-cheers service-icon"></i>
+                        </div>
+                        
+                        <h3 class="fw-bold mb-3" style="color: var(--color-dark);">Atención para Eventos</h3>
+                        <p class="mb-4">Personal altamente capacitado que organiza cada detalle de su evento, desde la presentación elegante hasta el servicio impecable.</p>
+                        
+                        <div class="specialty-tag">
+                            <span style="font-size: 0.75rem; color: var(--color-dark); font-weight: 600;">ELEGANCIA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Servicio 5 -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card card h-100 position-relative overflow-hidden p-4">
+                    <div class="position-absolute top-0 start-0 end-0" style="height: 3px; background: linear-gradient(to right, var(--color-gold-light), var(--color-gold), var(--color-gold-light));"></div>
+                    
+                    <div class="card-body text-center p-2 p-xl-4">
+                        <div class="service-icon-wrapper mx-auto mb-4">
+                            <div class="service-icon-bg"></div>
+                            <i class="fas fa-clipboard-list service-icon"></i>
+                        </div>
+                        
+                        <h3 class="fw-bold mb-3" style="color: var(--color-dark);">Menús Personalizados</h3>
+                        <p class="mb-4">Creación de propuestas gastronómicas a medida según sus preferencias, restricciones alimenticias o visión para su celebración especial.</p>
+                        
+                        <div class="specialty-tag">
+                            <span style="font-size: 0.75rem; color: var(--color-dark); font-weight: 600;">PERSONALIZADO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Servicio 6 -->
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card card h-100 position-relative overflow-hidden p-4">
+                    <div class="position-absolute top-0 start-0 end-0" style="height: 3px; background: linear-gradient(to right, var(--color-gold-light), var(--color-gold), var(--color-gold-light));"></div>
+                    
+                    <div class="card-body text-center p-2 p-xl-4">
+                        <div class="service-icon-wrapper mx-auto mb-4">
+                            <div class="service-icon-bg"></div>
+                            <i class="fas fa-truck service-icon"></i>
+                        </div>
+                        
+                        <h3 class="fw-bold mb-3" style="color: var(--color-dark);">Pedidos Online y Delivery</h3>
+                        <p class="mb-4">Sistema intuitivo para ordenar en línea, con entregas puntuales que mantienen la calidad y frescura de nuestros platos árabes.</p>
+                        
+                        <div class="specialty-tag">
+                            <span style="font-size: 0.75rem; color: var(--color-dark); font-weight: 600;">CONVENIENTE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <!-- Llamado a la acción en la sección -->
+        <div class="text-center mt-5 pt-3">
+            <a href="productos.html" class="btn px-4 py-2 rounded-pill" style="background-color: var(--color-gold); color: var(--color-dark);">
+                <i class="fas fa-book-open me-2"></i> Ver nuestro menú completo
+            </a>
+        </div>
+    </div>
+
+
+
+<!-- Proceso de Servicio Mejorado -->
+<section class="process-section py-5 my-5 position-relative">
+    <!-- Fondo sutil con textura -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: #FCFAF5; z-index: -1;"></div>
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-image: url('/api/placeholder/1200/600'); opacity: 0.02; z-index: -1; background-size: cover;"></div>
+    
+    <!-- Decoración lateral -->
+    <div class="position-absolute start-0 top-50 translate-middle-y d-none d-xl-block" style="opacity: 0.05;">
+        <img src="https://scontent.flim18-3.fna.fbcdn.net/v/t1.15752-9/494576865_622996340769087_1607606692222973774_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fdiqjjuT-yQQ7kNvwHDF2Br&_nc_oc=AdnBwXT1azsdJ0cZD4wMGTRRtm0_Tp-5aBbz8z4yLE-U9kds6aRWUxjnMYOWpxIwHM8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-3.fna&oh=03_Q7cD2AEa6tRZWsaN-a03AeUUJMFn4akA9F5-R-Ydp4gVp2xwOQ&oe=683B565E" alt="Decoración" style="transform: rotate(-10deg);">
+    </div>
+    <div class="position-absolute end-0 top-50 translate-middle-y d-none d-xl-block" style="opacity: 0.05;">
+        <img src="https://scontent.flim18-3.fna.fbcdn.net/v/t1.15752-9/494576865_622996340769087_1607606692222973774_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fdiqjjuT-yQQ7kNvwHDF2Br&_nc_oc=AdnBwXT1azsdJ0cZD4wMGTRRtm0_Tp-5aBbz8z4yLE-U9kds6aRWUxjnMYOWpxIwHM8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-3.fna&oh=03_Q7cD2AEa6tRZWsaN-a03AeUUJMFn4akA9F5-R-Ydp4gVp2xwOQ&oe=683B565E" alt="Decoración" style="transform: rotate(10deg);">
+    </div>
+    
+    <div class="container">
+        <!-- Encabezado elegante -->
+        <div class="row text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="d-inline-block position-relative mb-3">
+                    <div class="position-absolute top-50 start-50 translate-middle" style="width: 70px; height: 70px; background-color: var(--color-gold); opacity: 0.1; border-radius: 50%;"></div>
+                    <img src="https://scontent.flim18-3.fna.fbcdn.net/v/t1.15752-9/494576865_622996340769087_1607606692222973774_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fdiqjjuT-yQQ7kNvwHDF2Br&_nc_oc=AdnBwXT1azsdJ0cZD4wMGTRRtm0_Tp-5aBbz8z4yLE-U9kds6aRWUxjnMYOWpxIwHM8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-3.fna&oh=03_Q7cD2AEa6tRZWsaN-a03AeUUJMFn4akA9F5-R-Ydp4gVp2xwOQ&oe=683B565E" alt="Icono de proceso" class="process-icon">
+                </div>
+                <h2 class="display-5 fw-bold mb-3">Nuestra <span style="color: var(--color-accent);">Experiencia</span></h2>
+                <p class="lead" style="color: var(--color-dark);">Un proceso meticuloso y dedicado para ofrecerte lo más auténtico de la cocina árabe</p>
+                
+                <!-- Separador decorativo -->
+                <div class="mx-auto mt-4" style="width: 120px; height: 3px; background: linear-gradient(to right, transparent, var(--color-gold), transparent);"></div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <!-- Línea de tiempo del proceso -->
+                <div class="position-relative process-timeline">
+                    <!-- Línea conectora principal -->
+                    <div class="process-main-line"></div>
+                    
+                    <div class="row g-lg-5 g-4">
+                        <!-- Paso 1 -->
+                        <div class="col-md-4 mb-5">
+                            <div class="process-item position-relative">
+                                <!-- Número del proceso con efecto de brillo -->
+                                <div class="process-number-wrapper">
+                                    <div class="process-number-glow"></div>
+                                    <div class="process-number">1</div>
+                                </div>
+                                
+                                <!-- Contenido del paso -->
+                                <div class="process-content">
+                                    <h4 class="fw-bold mb-3" style="color: var(--color-dark);">Elección del Plato</h4>
+                                    <p style="color: #6c757d;">Nuestros asesores gastronómicos le guiarán para seleccionar platos que se adapten perfectamente a sus preferencias y ocasión especial.</p>
+                                    
+                                    <!-- Ícono decorativo -->
+                                    <div class="process-icon-small">
+                                        <i class="fas fa-clipboard-list"></i>
+                                    </div>
+                                </div>
+                                
+                                <!-- Línea conectora al siguiente paso (visible solo en móvil) -->
+                                <div class="process-mobile-connector d-md-none"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Paso 2 -->
+                        <div class="col-md-4 mb-5">
+                            <div class="process-item position-relative">
+                                <div class="process-number-wrapper">
+                                    <div class="process-number-glow"></div>
+                                    <div class="process-number">2</div>
+                                </div>
+                                
+                                <div class="process-content">
+                                    <h4 class="fw-bold mb-3" style="color: var(--color-dark);">Pedido Confirmado</h4>
+                                    <p style="color: #6c757d;">Detallamos minuciosamente su pedido, tiempos de preparación y costos, garantizando total transparencia sin sorpresas.</p>
+                                    
+                                    <div class="process-icon-small">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-mobile-connector d-md-none"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Paso 3 -->
+                        <div class="col-md-4 mb-5">
+                            <div class="process-item position-relative">
+                                <div class="process-number-wrapper">
+                                    <div class="process-number-glow"></div>
+                                    <div class="process-number">3</div>
+                                </div>
+                                
+                                <div class="process-content">
+                                    <h4 class="fw-bold mb-3" style="color: var(--color-dark);">Preparación Artesanal</h4>
+                                    <p style="color: #6c757d;">Nuestros maestros culinarios elaboran cada plato con ingredientes selectos y técnicas tradicionales del Medio Oriente.</p>
+                                    
+                                    <div class="process-icon-small">
+                                        <i class="fas fa-mortar-pestle"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-mobile-connector d-md-none"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Paso 4 -->
+                        <div class="col-md-4 mb-5 mb-md-0">
+                            <div class="process-item position-relative">
+                                <div class="process-number-wrapper">
+                                    <div class="process-number-glow"></div>
+                                    <div class="process-number">4</div>
+                                </div>
+                                
+                                <div class="process-content">
+                                    <h4 class="fw-bold mb-3" style="color: var(--color-dark);">Control de Calidad</h4>
+                                    <p style="color: #6c757d;">Verificamos meticulosamente la presentación, equilibrio de sabores y temperatura óptima antes de cada servicio.</p>
+                                    
+                                    <div class="process-icon-small">
+                                        <i class="fas fa-medal"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-mobile-connector d-md-none"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Paso 5 -->
+                        <div class="col-md-4 mb-5 mb-md-0">
+                            <div class="process-item position-relative">
+                                <div class="process-number-wrapper">
+                                    <div class="process-number-glow"></div>
+                                    <div class="process-number">5</div>
+                                </div>
+                                
+                                <div class="process-content">
+                                    <h4 class="fw-bold mb-3" style="color: var(--color-dark);">Entrega Puntual</h4>
+                                    <p style="color: #6c757d;">Reciba su pedido en el tiempo acordado, con embalaje especial que conserva todo el sabor y la frescura original.</p>
+                                    
+                                    <div class="process-icon-small">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-mobile-connector d-md-none"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Paso 6 -->
+                        <div class="col-md-4">
+                            <div class="process-item position-relative">
+                                <div class="process-number-wrapper">
+                                    <div class="process-number-glow"></div>
+                                    <div class="process-number">6</div>
+                                </div>
+                                
+                                <div class="process-content">
+                                    <h4 class="fw-bold mb-3" style="color: var(--color-dark);">Seguimiento Personal</h4>
+                                    <p style="color: #6c757d;">Nos comunicamos personalmente para conocer su experiencia y asegurar que haya superado sus expectativas.</p>
+                                    
+                                    <div class="process-icon-small">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Garantía de satisfacción -->
+                <div class="text-center mt-4 pt-4">
+                    <div class="guarantee-badge mx-auto">
+                        <div class="guarantee-inner">
+                            <i class="fas fa-award" style="color: var(--color-gold); font-size: 1.8rem;"></i>
+                            <p class="mb-0 mt-2 fw-bold" style="color: var(--color-dark); font-size: 0.9rem;">SATISFACCIÓN GARANTIZADA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+       
+
+
+<!-- CTA Section -->
+<section class="py-5 cta-section">
+    <div class="container cta-content">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h2 class="cta-title">¿Listo para deleitar tu paladar?</h2>
+                <p class="cta-text">Contáctanos hoy mismo para una consulta gratuita y descubre cómo podemos ayudarte a crear el menú perfecto para tu evento o reunión. Nuestros expertos culinarios están listos para ofrecerte una experiencia gastronómica excepcional que sorprenderá a todos tus invitados.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="https://wa.me/51991629785?text=Hola%2C%20quiero%20saber%20más%20sobre%20la%20comida%20árabe%20que%20ofrecen" class="btn cta-btn">
+                    <i class="fas fa-envelope me-2"></i>Contáctanos
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Añade comportamiento al botón "Back to top"
+    document.addEventListener('DOMContentLoaded', function() {
+        var backToTopButton = document.querySelector('.back-to-top');
+        
+        if (backToTopButton) {
+            // Ocultar inicialmente el botón
+            backToTopButton.style.opacity = '0';
+            backToTopButton.style.visibility = 'hidden';
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.opacity = '1';
+                    backToTopButton.style.visibility = 'visible';
+                } else {
+                    backToTopButton.style.opacity = '0';
+                    backToTopButton.style.visibility = 'hidden';
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+        }
+        
+        // Efecto de brillo para elementos de contacto
+        const contactIcons = document.querySelectorAll('.contact-icon');
+        contactIcons.forEach(icon => {
+            icon.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.1)';
+            });
+            
+            icon.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+        
+        // Efectos en hover para enlaces del footer
+        const footerLinks = document.querySelectorAll('.footer-link');
+        footerLinks.forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                const icon = this.querySelector('span');
+                if (icon) {
+                    icon.style.transition = 'all 0.3s ease';
+                    icon.style.transform = 'rotate(10deg)';
+                }
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                const icon = this.querySelector('span');
+                if (icon) {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+        
+        // Añadir efecto de luz para el logo en hover
+        const logoContainer = document.querySelector('.logo-container');
+        if (logoContainer) {
+            logoContainer.addEventListener('mouseenter', function() {
+                this.style.boxShadow = '0 0 30px rgba(213, 206, 163, 0.8)';
+            });
+            
+            logoContainer.addEventListener('mouseleave', function() {
+                this.style.boxShadow = '0 0 20px rgba(213, 206, 163, 0.4)';
+            });
+        }
+    });
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      // Contador de estadísticas
+      const statNumbers = document.querySelectorAll('.stat-number');
+      
+      const runCounter = (el) => {
+          const target = parseInt(el.getAttribute('data-count'));
+          const duration = 2000; // 2 segundos
+          const step = target / (duration / 30); // Actualizar cada 30ms
+          
+          let current = 0;
+          const counter = setInterval(() => {
+              current += step;
+              if (current >= target) {
+                  el.textContent = target.toLocaleString();
+                  clearInterval(counter);
+              } else {
+                  el.textContent = Math.floor(current).toLocaleString();
+              }
+          }, 30);
+      };
+      
+      // Iniciar contador cuando el elemento es visible
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  runCounter(entry.target);
+                  observer.unobserve(entry.target);
+              }
+          });
+      }, { threshold: 0.5 });
+      
+      statNumbers.forEach(stat => {
+          observer.observe(stat);
+      });
+      
+      // Manejo del carrito con Offcanvas en lugar de Modal
+      const cartOffcanvas = new bootstrap.Offcanvas(document.getElementById('cartOffcanvas'));
+      document.getElementById('cartBtn').addEventListener('click', function() {
+          cartOffcanvas.show();
+      });
+      
+      // Botones de cantidad en el carrito
+      const decreaseButtons = document.querySelectorAll('.btn-decrease');
+      const increaseButtons = document.querySelectorAll('.btn-increase');
+      const removeButtons = document.querySelectorAll('.remove-item');
+      
+      decreaseButtons.forEach(btn => {
+          btn.addEventListener('click', function() {
+              const input = this.parentElement.querySelector('.item-quantity');
+              let value = parseInt(input.value);
+              if (value > 1) {
+                  input.value = value - 1;
+                  updateCartSummary();
+              }
+          });
+      });
+      
+      increaseButtons.forEach(btn => {
+          btn.addEventListener('click', function() {
+              const input = this.parentElement.querySelector('.item-quantity');
+              let value = parseInt(input.value);
+              input.value = value + 1;
+              updateCartSummary();
+          });
+      });
+      
+      removeButtons.forEach(btn => {
+          btn.addEventListener('click', function() {
+              const cartItem = this.closest('.cart-item');
+              cartItem.remove();
+              updateCartSummary();
+              updateCartCount();
+              
+              // Mostrar mensaje vacío si no hay items
+              if (document.querySelectorAll('.cart-item').length === 0) {
+                  document.getElementById('cart-empty').style.display = 'block';
+                  document.getElementById('cart-items-container').style.display = 'none';
+              }
+          });
+      });
+      
+      function updateCartSummary() {
+          // Simplificado para el ejemplo - en una aplicación real calcularía los valores reales
+          const totalElement = document.querySelector('.cart-summary .text-success');
+          let total = 0;
+          
+          document.querySelectorAll('.cart-item').forEach(item => {
+              const price = parseFloat(item.querySelector('.text-success').textContent.replace('S/ ', '').replace(',', ''));
+              const quantity = parseInt(item.querySelector('.item-quantity').value);
+              total += price * quantity;
+          });
+          
+          document.querySelector('.cart-summary div:first-child span:last-child').textContent = `S/ ${total.toLocaleString('es-PE', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+          totalElement.textContent = `S/ ${total.toLocaleString('es-PE', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+      }
+      
+      function updateCartCount() {
+          const count = document.querySelectorAll('.cart-item').length;
+          const cartCountElement = document.getElementById('cart-count');
+          
+          if (count > 0) {
+              cartCountElement.textContent = count;
+              cartCountElement.style.display = 'inline-block';
+          } else {
+              cartCountElement.style.display = 'none';
+          }
+      }
+      
+      // Añadir al carrito desde productos destacados
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+      const cartToast = new bootstrap.Toast(document.getElementById('cartToast'));
+      
+      addToCartButtons.forEach(btn => {
+          btn.addEventListener('click', function() {
+              const name = this.getAttribute('data-name');
+              document.getElementById('toast-message').textContent = `${name} añadido al carrito`;
+              cartToast.show();
+              
+              // Incrementar contador de carrito
+              const cartCount = document.getElementById('cart-count');
+              cartCount.textContent = parseInt(cartCount.textContent) + 1;
+              cartCount.style.display = 'inline-block';
+          });
+      });
+      
+      // Manejo del login/registro con Offcanvas 
+      const loginOffcanvas = new bootstrap.Offcanvas(document.getElementById('loginOffcanvas'));
+      document.getElementById('loginBtn').addEventListener('click', function() {
+          loginOffcanvas.show();
+      });
+      
+      // Alternar visibilidad de contraseña
+      const togglePasswordButtons = document.querySelectorAll('.toggle-password');
+      
+      togglePasswordButtons.forEach(btn => {
+          btn.addEventListener('click', function() {
+              const input = this.previousElementSibling;
+              const icon = this.querySelector('i');
+              
+              if (input.type === 'password') {
+                  input.type = 'text';
+                  icon.classList.remove('fa-eye');
+                  icon.classList.add('fa-eye-slash');
+              } else {
+                  input.type = 'password';
+                  icon.classList.remove('fa-eye-slash');
+                  icon.classList.add('fa-eye');
+              }
+          });
+      });
+      
+      // Validación del formulario de login
+      document.getElementById('loginForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+          const email = document.getElementById('loginEmail').value;
+          const password = document.getElementById('loginPassword').value;
+          
+          if (!email || !password) {
+              showAlert('Por favor completa todos los campos', 'danger');
+              return;
+          }
+          
+          // Simulación de login exitoso (en una app real esto iría al servidor)
+          showAlert('Inicio de sesión exitoso', 'success');
+          setTimeout(() => {
+              loginOffcanvas.hide();
+          }, 1500);
+      });
+      
+      // Validación del formulario de registro
+      document.getElementById('registerForm').addEventListener('submit', function(e) {
+          e.preventDefault();
+          const name = document.getElementById('registerName').value;
+          const lastName = document.getElementById('registerLastName').value;
+          const email = document.getElementById('registerEmail').value;
+          const phone = document.getElementById('registerPhone').value;
+          const password = document.getElementById('registerPassword').value;
+          const confirmPassword = document.getElementById('confirmPassword').value;
+          
+          if (!name || !lastName || !email || !phone || !password || !confirmPassword) {
+              showAlert('Por favor completa todos los campos', 'danger');
+              return;
+          }
+          
+          if (password !== confirmPassword) {
+              showAlert('Las contraseñas no coinciden', 'danger');
+              return;
+          }
+          
+          // Simulación de registro exitoso
+          showAlert('¡Registro exitoso! Ya puedes iniciar sesión', 'success');
+          setTimeout(() => {
+              document.getElementById('login-tab').click();
+          }, 1500);
+      });
+      
+      // Verificación de fortaleza de contraseña
+      document.getElementById('registerPassword').addEventListener('input', function() {
+          const password = this.value;
+          const progressBar = document.querySelector('.password-strength .progress-bar');
+          
+          let strength = 0;
+          if (password.length >= 8) strength += 25;
+          if (password.match(/[A-Z]/)) strength += 25;
+          if (password.match(/[a-z]/)) strength += 25;
+          if (password.match(/[0-9]/)) strength += 25;
+          
+          progressBar.style.width = `${strength}%`;
+          
+          if (strength < 50) {
+              progressBar.className = 'progress-bar bg-danger';
+          } else if (strength < 75) {
+              progressBar.className = 'progress-bar bg-warning';
+          } else {
+              progressBar.className = 'progress-bar bg-success';
+          }
+      });
+      
+      function showAlert(message, type) {
+          const alertElement = document.getElementById('login-alert');
+          alertElement.className = `alert alert-${type} alert-dismissible fade show`;
+          alertElement.querySelector('.alert-message').textContent = message;
+          alertElement.classList.remove('d-none');
+          
+          if (type === 'success') {
+              setTimeout(() => {
+                  alertElement.classList.add('d-none');
+              }, 3000);
+          }
+      }
+  });
+</script>
+</body>
+</html>

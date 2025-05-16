@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sal y Fe - Cocina Árabe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Fuentes personalizadas */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        /* Variables globales */
+        :root {
+            --primary-color: #d35400;
+            --secondary-color: #472d14;
+            --accent-color: #8e44ad;
+            --text-color: #333;
+            --light-bg: #f9f7f2;
+            --dark-bg: #2c3e50;
+            --white: #ffffff;
+            --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+            --border-radius: 12px;
+        }
+        
+         :root {
+            --color-gold: #D4AF37;
+            --color-gold-light: #E5C76B;
+            --color-accent: #8E6516;
+            --color-dark: #7c5924;
+            --color-text-light: #F5F5F5;
+        }
+
+/* Header elegante y llamativo */
+    .navbar-brand {
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s ease;
+    }
+    
+    .navbar-brand:hover {
+        transform: scale(1.05);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .header-premium {
+        background: linear-gradient(135deg, #8b4513 0%, #d4a95c 100%);
+        box-shadow: 0 4px 15px rgba(139, 69, 19, 0.7);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .header-premium::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgogIDxmaWx0ZXIgaWQ9Im5vaXNlIj4KICAgIDxmZVR1cmJ1bGVuY2UgdHlwZT0iZnJhY3RhbE5vaXNlIiBiYXNlRnJlcXVlbmN5PSIwLjA1IiBudW1PY3RhdmVzPSIyIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIj48L2ZlVHVyYnVsZW5jZT4KICAgIDxmZURpZmZ1c2VMaWdodGluZyBsaWdodGluZy1jb2xvcj0iI2ZmZiIgc3VyZmFjZVNjYWxlPSIwLjUiPgogICAgICA8ZmVEaXN0YW50TGlnaHQgYXppbXV0aD0iNDUiIGVsZXZhdGlvbj0iNjAiPjwvZmVEaXN0YW50TGlnaHQ+CiAgICA8L2ZlRGlmZnVzZUxpZ2h0aW5nPgogICAgPGZlQmxlbmQgbW9kZT0ib3ZlcmxheSI+PC9mZUJsZW5kPgogIDwvZmlsdGVyPgogIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNub2lzZSkiIG9wYWNpdHk9IjAuMDUiPjwvcmVjdD4KPC9zdmc+') repeat;
+        opacity: 0.5;
+        z-index: 0;
+    }
+    
+    .nav-link {
+        font-weight: 600;
+        font-size: 1.05rem;
+        margin: 0 12px;
+        padding: 8px 5px;
+        transition: all 0.4s ease;
+        position: relative;
+        z-index: 1;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .nav-link::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background: #fff;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        border-radius: 2px;
+        box-shadow: 0 1px 5px rgba(255, 255, 255, 0.7);
+    }
+    
+    .nav-link:hover {
+        color: #ffffff;
+        transform: translateY(-2px);
+    }
+    
+    .nav-link:hover::before {
+        width: 100%;
+    }
+    
+    .nav-link.active {
+        color: #ffffff;
+        font-weight: 700;
+    }
+    
+    .nav-link.active::before {
+        width: 80%;
+        background: #ffffff;
+        height: 3px;
+    }
+    
+    .brand-container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 60px;
+        padding: 5px 15px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        transition: all 0.4s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .brand-container:hover {
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    
+    .logo-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .brand-container:hover .logo-img {
+        transform: rotate(5deg) scale(1.05);
+    }
+    
+    .btn-contacto {
+        border-radius: 50px;
+        padding: 10px 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.4s ease;
+        border: 2px solid #ffffff;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+    
+    .btn-contacto:hover {
+        background: #ffffff;
+        color: #8b4513;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+    
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            background: rgba(139, 69, 19, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-link {
+            margin: 10px 0;
+            text-align: center;
+        }
+        
+        .nav-link::before {
+            bottom: -5px;
+        }
+    }
+   
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 80vh;
+            min-height: 500px;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.7);
+        }
+        
+        .hero-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1;
+        }
+        
+        .hero-heading {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.3);
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-subheading {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1.2s ease;
+        }
+        
+       /* Estilos mejorados para la sección de Fundadores */
+.team-section {
+    padding: 120px 0;
+    position: relative;
+    background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(249,249,249,0.9) 100%), 
+                url('https://images.unsplash.com/photo-1527224538127-2104bb71c51b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.team-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c8a97e' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.team-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Título de sección */
+.section-title {
+    position: relative;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.section-subtitle {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #c8a97e;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #49371f;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #c8a97e, #e6c395);
+    border-radius: 4px;
+}
+
+.section-description {
+    max-width: 700px;
+    margin: 20px auto 0;
+    font-size: 1.1rem;
+    color: #6b6b6b;
+    line-height: 1.7;
+}
+
+/* Tarjetas de equipo */
+.team-container {
+    margin-top: 30px;
+}
+
+.team-card {
+    perspective: 1500px;
+    height: 450px;
+    margin-bottom: 40px;
+}
+
+.team-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.team-card:hover .team-card-inner {
+    transform: rotateY(180deg);
+}
+
+.team-card-front, .team-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.team-card-front {
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+}
+
+.team-card-back {
+    background: linear-gradient(135deg, #c8a97e 0%, #e6c395 100%);
+    color: white;
+    transform: rotateY(180deg);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.team-card-back h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.team-card-back p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+}
+
+.contact-btn:hover {
+    background: white;
+    color: #c8a97e;
+    transform: translateY(-5px);
+}
+
+/* Imagen de miembro */
+.member-img-wrapper {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.member-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.team-card:hover .member-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.member-badge {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    background: #c8a97e;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px 20px 0 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .member-badge {
+    transform: translateY(0);
+}
+
+/* Información del miembro */
+.member-info {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.member-info h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #49371f;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.member-position {
+    font-size: 1rem;
+    color: #c8a97e;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Iconos sociales */
+.member-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.member-social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #5f4444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c8a97e;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.member-social a:hover {
+    background: #c8a97e;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* CTA sección equipo */
+.team-cta {
+    margin-top: 60px;
+}
+
+.team-cta p {
+    font-size: 1.2rem;
+    color: #6b6b6b;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 14px 35px;
+    background: linear-gradient(135deg, #c8a97e 0%, #e6c395 100%);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 10px 20px rgba(200, 169, 126, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(200, 169, 126, 0.4);
+}
+
+/* Animaciones */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos responsivos */
+@media (max-width: 991px) {
+    .team-card {
+        height: 420px;
+    }
+    
+    .member-img-wrapper {
+        height: 250px;
+    }
+    
+    .section-title h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .team-section {
+        padding: 80px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .team-card {
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Estilos mejorados para la sección de contacto */
+.contact-section {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #f1f8f5 0%, #ffffff 100%);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-subtitle {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #16a085;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 0 10px;
+}
+
+.section-subtitle:before,
+.section-subtitle:after {
+    content: "";
+    height: 2px;
+    width: 30px;
+    background: #16a085;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.section-description {
+    max-width: 700px;
+    margin: 20px auto 0;
+    color: #666;
+}
+
+/* Información de contacto */
+.contact-info {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.contact-info-title {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.contact-info-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #704e0e 0%, #8b5920 100%);
+}
+
+.contact-info-items {
+    margin-bottom: 30px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #5c460b 0%, #8b5920 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    color: white;
+    font-size: 1.3rem;
+    box-shadow: 0 8px 15px rgba(22, 160, 133, 0.25);
+    transition: all 0.3s ease;
+}
+
+.contact-info-item:hover .contact-icon {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(22, 160, 133, 0.35);
+}
+
+.contact-text h5 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.contact-text p {
+    color: #666;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Enlaces sociales */
+.social-links {
+    border-top: 1px solid #5c4141;
+    padding-top: 20px;
+}
+
+.social-links h5 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #725b5b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: linear-gradient(135deg, #ffffff 0%, #8b5920 100%);
+    color: rgb(255, 255, 255);
+    transform: translateY(-5px);
+}
+
+/* Formulario de contacto */
+.contact-form {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form-title {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.contact-form-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #5e3b0e 0%, #8b5920 100%);
+}
+
+.contact-form-subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 15px 20px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #16a085;
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-check {
+    margin-top: 5px;
+}
+
+.form-check-input {
+    margin-top: 0.3rem;
+}
+
+.form-check-label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #613e09 0%, #8b5920 100%);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 8px 15px rgba(22, 160, 133, 0.25);
+}
+
+.btn-submit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(22, 160, 133, 0.35);
+}
+
+.btn-submit i {
+    font-size: 1.1rem;
+}
+
+/* Sección del mapa */
+.map-container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.map-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.map-title {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.map-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #16a085 0%, #8b5920 100%);
+}
+
+.embed-responsive {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animaciones */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact-info {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 70px 0;
+    }
+    
+    .contact-form, .contact-info, .map-container {
+        padding: 30px;
+    }
+    
+    .section-title {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .contact-form-title, .contact-info-title, .map-title {
+        font-size: 1.6rem;
+    }
+}
+        
+     /* Estilos mejorados para el encabezado de la sección de contacto */
+
+.contact-section {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #f1f8f5 0%, #ffffff 100%);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-subtitle {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #16a085;
+    margin-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.section-title h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Divider decorativo con icono */
+.divider-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.divider {
+    position: relative;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #16a085, transparent);
+}
+
+.divider:before,
+.divider:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    background: linear-gradient(to right, transparent, #8b5920, transparent);
+    top: 0;
+}
+
+.divider:before {
+    left: -50px;
+}
+
+.divider:after {
+    right: -50px;
+}
+
+.divider i {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f1f8f5;
+    color: #16a085;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(22, 160, 133, 0.2);
+}
+
+/* Texto de introducción */
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.intro-text p {
+    margin-bottom: 1.5rem;
+}
+
+.brand-highlight {
+    font-weight: 700;
+    color: #16a085;
+}
+
+.emphasis {
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Botones CTA */
+.contact-cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #16a085 0%, #8b5920 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 8px 15px rgba(22, 160, 133, 0.25);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(22, 160, 133, 0.35);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #333;
+    border: 2px solid #16a085;
+}
+
+.btn-outline:hover {
+    background: #16a085;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(22, 160, 133, 0.25);
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+/* Animación de entrada */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .contact-cta {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+        }
+        .footer-arabe {
+            background-color: var(--color-dark);
+            color: var(--color-text-light);
+            position: relative;
+            padding-top: 4rem;
+            overflow: hidden;
+        }
+
+        .footer-arabe::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/arabesque.png');
+            background-repeat: repeat;
+            opacity: 0.08;
+            z-index: 0;
+        }
+
+        .footer-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-gold);
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .footer-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--color-gold);
+            margin-bottom: 1.25rem;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+
+        .footer-heading::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--color-gold);
+        }
+
+        .footer-description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.75rem;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-left: 1.25rem;
+        }
+
+        .footer-links a::before {
+            content: "›";
+            position: absolute;
+            left: 0;
+            color: var(--color-gold);
+            font-size: 1.2rem;
+            line-height: 1;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-gold);
+            transform: translateX(3px);
+        }
+
+        .footer-links a:hover::before {
+            transform: translateX(3px);
+        }
+
+        .footer-contact li {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .footer-contact li i {
+            color: var(--color-gold);
+            margin-right: 0.75rem;
+            margin-top: 0.25rem;
+        }
+
+        .footer-social {
+            margin-top: 1.5rem;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(0, 0, 0, 0.07);
+            border-radius: 50%;
+            margin-right: 0.75rem;
+            color: rgba(0, 0, 0, 0.9);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: var(--color-gold);
+            color: var(--color-dark);
+            transform: translateY(-3px);
+        }
+
+        .footer-newsletter input.form-control {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0.5rem;
+            padding: 0.85rem 1rem;
+            color: white;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .footer-newsletter input.form-control:focus {
+            background-color: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.15);
+        }
+
+        .footer-newsletter input.form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+            color: var(--color-dark);
+            font-weight: 600;
+            border-radius: 0.5rem;
+            padding: 0.85rem 1.5rem;
+            border: none;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn-gold:hover {
+            background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold));
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+
+        .footer-bottom {
+            background-color: rgba(0,0,0,0.2);
+            padding: 1.5rem 0;
+            margin-top: 3.5rem;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer-bottom a {
+            color: var(--color-gold-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--color-gold);
+        }
+
+        .ornament {
+            height: 30px;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23D4AF37' fill-opacity='0.15' d='M21.184 20c.357-.13.72-.264.888-.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175V0H0v20c2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.887.14 1.855 1.67 4.073 3.175 6.556 3.175 2.485 0 4.7-1.495 6.556-3.175.167-.12.53-.01.888.14Z'/%3E%3C/svg%3E");
+            margin-bottom: -1px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-arabe {
+                padding-top: 3rem;
+            }
+            
+            .footer-newsletter {
+                margin-bottom: 2rem;
+            }
+            
+            .footer-social {
+                margin-bottom: 2rem;
+            }
+        }
+/* Enlace suave de scroll */
+.scroll-link {
+    cursor: pointer;
+}
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header mejorado -->
+ <header class="header-premium py-3 sticky-top">
+    <div class="container position-relative" style="z-index: 1;">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand d-flex align-items-center brand-container" href="index.html">
+                    <img src="https://scontent.flim18-3.fna.fbcdn.net/v/t1.15752-9/494576865_622996340769087_1607606692222973774_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fdiqjjuT-yQQ7kNvwHDF2Br&_nc_oc=AdnBwXT1azsdJ0cZD4wMGTRRtm0_Tp-5aBbz8z4yLE-U9kds6aRWUxjnMYOWpxIwHM8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-3.fna&oh=03_Q7cD2AEa6tRZWsaN-a03AeUUJMFn4akA9F5-R-Ydp4gVp2xwOQ&oe=683B565E" 
+                         alt="Sal y Fe Logo" class="me-3 logo-img">
+                    <span class="brand-text">Sal y Fe</span>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home me-1"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">
+                                <i class="fas fa-hands-helping me-1"></i> Servicios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">
+                                <i class="fas fa-address-card me-1"></i> Contactos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">
+                                <i class="fas fa-shopping-basket me-1"></i> Productos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="d-none d-lg-block">
+                    <a href="https://wa.me/51991629785?text=Hola%2C%20quiero%20saber%20más%20sobre%20la%20comida%20árabe%20que%20ofrecen" class="btn btn-contacto">
+                        <i class="fas fa-phone-alt me-2"></i>Contáctanos
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+ <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="https://scontent.flim18-3.fna.fbcdn.net/v/t1.15752-9/494573183_678233111485031_4876842669070256242_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=d6Bn8zMLKMoQ7kNvwGRIK4r&_nc_oc=AdmNaUwOmDsxVdCxNuXAvukLCzOp2N6dHFOAxy5KTFTcoakYjMHmaP4Xwa8pQLHaGRI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-3.fna&oh=03_Q7cD2QFErZcvVNdxZtvmjnshug8yJZvsv2MOyaAJTD3xHTIdZQ&oe=684DD656" alt="Tecnología de fondo" class="hero-bg">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-6 hero-content text-white">
+                    <h1 class="hero-heading">📞 Contáctanos  <span class="text-warning">con Confianza</span></h1>
+                    <p class="hero-subheading">Descubre sabores árabes auténticos y déjanos llevarte hasta tu mesa. Estamos aquí para responder tus dudas y tomar tu pedido en cualquier momento.    </p>
+                    <div class="d-flex">
+                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+     
+<!-- Sección de Fundadores Mejorada -->
+<section class="team-section" id="fundadores">
+    <div class="container">
+        <div class="section-title animate-fade-in">
+            <span class="section-subtitle">Nuestro Equipo</span>
+            <h2>Fundadores de Sal y Fe</h2>
+            <p class="section-description">Conozca a las mentes brillantes que dan vida a los auténticos sabores del Medio Oriente</p>
+        </div>
+        
+        <div class="row team-container">
+            <!-- Fundador 1 -->
+            <div class="col-lg-4 col-md-6 animate-fade-in" data-delay="100">
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="member-img-wrapper">
+                                <img src="https://scontent.flim18-1.fna.fbcdn.net/v/t1.15752-9/494575658_1739434410319182_7098722336289021596_n.png?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=5ahQ7tO-NlIQ7kNvwFyNfK7&_nc_oc=Adn_vWgQNBos3LH7j6E1CjQH3oKzw5tq1vJgdazGIUiHCHaav82PdGnpIqnuhP1istQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-1.fna&oh=03_Q7cD2AEXPMxt9v_KP4RPW-UfT1GntY6EcDDdhEShBfR_wgtt2Q&oe=683B379A" alt="Elias Cardenas">
+                                <div class="member-badge">
+                                    <span>Operaciones</span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3>Elias Cardenas Cuellar</h3>
+                                <p class="member-position">Programador de HTML</p>
+                                <div class="member-social">
+                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card-back">
+                            <h3>Elias Cardenas</h3>
+                            <p>Con una sólida formación en operaciones y logística, Elias se encarga de garantizar que todas las operaciones diarias se realicen de manera eficiente y efectiva.</p>
+                            <a href="https://www.instagram.com/failo_kxy/" class="contact-btn">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fundador 2 -->
+            <div class="col-lg-4 col-md-6 animate-fade-in" data-delay="200">
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="member-img-wrapper">
+                                <img src="https://scontent.flim18-2.fna.fbcdn.net/v/t1.15752-9/494573876_4052686014990403_69355127936620002_n.png?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Ww98DKf_eM4Q7kNvwFBmehT&_nc_oc=AdlwOFLvpmbDU0XgE2tkHbLh9nhgObxMo27dpZQenI0WLq7zG2vpVMz58WIruCA5UUE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-2.fna&oh=03_Q7cD2QG-fN3DMy3UsOuGPoWSqrvHO_eqlHQausURfhy3nK7QPw&oe=68407B67" alt="Rita Cuellar">
+                                <div class="member-badge">
+                                    <span>Chef Principal</span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3>Rita Cuellar Sanchez</h3>
+                                <p class="member-position">Experta en Cocina Árabe</p>
+                                <div class="member-social">
+                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card-back">
+                            <h3>Rita Cuellar</h3>
+                            <p>Rita domina el arte de la cocina árabe con pasión y precisión. Cada plato que prepara honra las tradiciones del Medio Oriente y transforma ingredientes simples en sabores inolvidables.</p>
+                            <a href="https://wa.me/51991629785?text=Hola%2C%20quiero%20saber%20más%20sobre%20la%20comida%20árabe%20que%20ofrecen" class="contact-btn">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fundador 3 -->
+            <div class="col-lg-4 col-md-6 animate-fade-in" data-delay="300">
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="member-img-wrapper">
+                                <img src="https://scontent.flim18-3.fna.fbcdn.net/v/t1.15752-9/494579015_1472070987503171_4871389859644634608_n.png?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=mte0jxKkc9IQ7kNvwEN4s29&_nc_oc=AdlTuwQCBjv-5krfP4kSEAADBy0OHJZqMPMmJYb6kiLr84MRZCNKg6x8UI5xL_C9N5E&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-3.fna&oh=03_Q7cD2QEayaNsVm1DrVGMY6RyIXPifGtkaqEmpKSbPmd1M1i8kQ&oe=684DD83F" alt="Vidal Cardenas">
+                                <div class="member-badge">
+                                    <span>Finanzas</span>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h3>Spitz Cuellar Sanchez</h3>
+                                <p class="member-position">Experto en Parrillas y comidas</p>
+                                <div class="member-social">
+                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-card-back">
+                            <h3>Spitz Cuellar Sanchez</h3>
+                            <p>Spitz Cuellar Sanchez una gestión responsable, haciendo posible que la esencia de Sal y Fe llegue a cada mesa con equilibrio y sabor.</p>
+                            <a href="https://wa.me/51974256688?text=Hola%2C%20quiero%20saber%20más%20sobre%20la%20comida%20árabe%20que%20ofrecen" class="contact-btn">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="team-cta text-center animate-fade-in" data-delay="400">
+            <p>¿Quieres conocer más sobre nuestro equipo?</p>
+            <a href="#contact" class="btn btn-primary">Contáctanos</a>
+        </div>
+    </div>
+</section>
+<!-- Contact Section - Header Improved -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <!-- Encabezado mejorado de la sección de contacto -->
+        <div class="section-title animate-fade-in">
+            <span class="section-subtitle">Siempre a tu servicio</span>
+            <h2>Contáctanos</h2>
+            <div class="divider-container">
+                <div class="divider">
+                    <i class="fas fa-utensils"></i>
+                </div>
+            </div>
+            <div class="intro-text">
+                <p>En <span class="brand-highlight">Sal y Fe</span>, cada plato es una invitación a conocer la auténtica comida árabe, y queremos que tu experiencia sea lo más deliciosa y satisfactoria posible.</p>
+                
+                <p>Si tienes preguntas sobre nuestros menús, deseas hacer un pedido o simplemente quieres saber más sobre nuestros ingredientes y tradiciones, no dudes en ponerte en contacto con nosotros.</p>
+                
+                <p>Nuestro equipo está siempre dispuesto a ayudarte y asegurarse de que cada visita, ya sea física o virtual, sea una celebración del buen comer. <span class="emphasis">¡Nos encantaría saber de ti y hacer que tu experiencia en Sal y Fe sea inolvidable!</span></p>
+                
+                <div class="contact-cta">
+                    <a href="#contactForm" class="btn btn-primary scroll-link">
+                        <i class="fas fa-envelope me-2"></i>Escríbenos ahora
+                    </a>
+                    <a href=" https://www.instagram.com/deparraspitz?utm_source=qr&igsh=MTdiYmx0aGtvbXlxeQ%3D%3D" class="btn btn-outline">
+                        <i class="fas fa-phone me-2"></i>Llámanos
+                    </a>
+                </div>
+            </div>
+        </div>
+                
+        <!-- Aquí continuaría el resto del contenido de la sección de contacto -->
+        <div class="row">
+            <!-- El resto del contenido iría aquí -->
+        </div>
+    </div>
+</section>
+<!-- Contact Information Section -->
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="section-title animate-fade-in">
+            <span class="section-subtitle">Comunícate con nosotros</span>
+            <h2>Contáctanos</h2>
+            <p class="section-description">Estamos aquí para ayudarte con cualquier consulta sobre nuestra auténtica comida árabe</p>
+        </div>
+        
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-lg-5 animate-fade-in" data-delay="100">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Información de Contacto</h3>
+                    
+                    <div class="contact-info-items">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Ubicación Principal</h5>
+                                <p>Santa Maria de Huachipa Mz.B Lote 11, Lima <br>R353+8RP</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Teléfonos</h5>
+                                <p>+51 989 194 505 (Elias)<br>+51 991 629 785 (Rita)<br>+51 974 256 688(Spitz) </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Email</h5>
+                                <p>failocdns871@gmail.com<br>Ritaperu_84@hotmail.com<br>hojadeparraspitz@gmail.com </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h5>Horario de Atención</h5>
+                                <p>Lunes - Sábado: 9:00 AM - 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h5>Síguenos</h5>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/failo_kxy/" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/hojadeparraspitz" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/51991629785?text=Hola%2C%20quiero%20saber%20más%20sobre%20la%20comida%20árabe%20que%20ofrecen" aria-label="WhatsApp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.tiktok.com/@hoja.de.parra.spi?lang=es-419" aria-label="TikTok" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="col-lg-7 animate-fade-in" data-delay="200">
+                <div class="contact-form">
+                    <h3 class="contact-form-title">Envíanos un mensaje</h3>
+                    <p class="contact-form-subtitle">¿Tienes preguntas sobre nuestros menús o servicios? ¡Escríbenos!</p>
+                    
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nombre completo *" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Correo electrónico *" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Asunto">
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Tu mensaje *" required></textarea>
+                        </div>
+                        
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="privacyCheck" required>
+                            <label class="form-check-label" for="privacyCheck">Acepto la política de privacidad y el tratamiento de mis datos personales</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">
+                            <span>Enviar mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Map Section -->
+        <div class="row mt-5">
+            <div class="col-12 animate-fade-in" data-delay="300">
+                <div class="map-container">
+                    <h3 class="map-title">Encuéntranos</h3>
+                    <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.3714257064535!2d-76.94978522570242!3d-12.020249991152492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c3a3947765a3%3A0xb50d2e44daed3821!2sSanta%20Maria%20de%20Huachipa%2C%20Lurigancho-Chosica%2015457!5e0!3m2!1ses!2spe!4v1715808785980!5m2!1ses!2spe" width="1400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+       
+        </section>
+    </main>
+
+ <!-- Footer Mejorado - Sal y Fe -->
+    <footer class="footer-arabe">
+        <div class="ornament"></div>
+        <div class="container footer-content">
+            <div class="row gy-5">
+                <!-- Marca -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-title">Sal y Fe</h3>
+                    <p class="footer-description">Descubre la magia de los sabores orientales en cada bocado. Tradición, calidad y pasión en cada plato que servimos.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Navegación -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Explora</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Carta y Menú</a></li>
+                        <li><a href="#">Nuestra Historia</a></li>
+                        <li><a href="#">Reservas</a></li>
+                        <li><a href="#">Galería</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Contáctanos</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <span>+34 612 345 678</span><br>
+                                <small>Lun-Dom: 12:00 - 23:00</small>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@salyfe.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Calle Halal 123</span><br>
+                                <small>18001 Granada, España</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Ofertas Exclusivas</h5>
+                    <p class="footer-description">Suscríbete para recibir promociones especiales, eventos y nuestras últimas creaciones culinarias directamente en tu bandeja de entrada.</p>
+                    <form class="footer-newsletter">
+                        <div class="mb-3">
+                            <input type="email" placeholder="Tu correo electrónico" class="form-control" required />
+                        </div>
+                        <button type="submit" class="btn btn-gold w-100">Suscribirme</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2025 Sal y Fe. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <a href="#" class="me-3">Política de Privacidad</a>
+                        <a href="#">Términos y Condiciones</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background: linear-gradient(135deg, #16a085 0%, #2ecc71 100%); color: white; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3); z-index: 999; text-decoration: none; transition: all 0.3s ease;">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+          <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Contador de estadísticas
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            const runCounter = (el) => {
+                const target = parseInt(el.getAttribute('data-count'));
+                const duration = 2000; // 2 segundos
+                const step = target / (duration / 30); // Actualizar cada 30ms
+                
+                let current = 0;
+                const counter = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        el.textContent = target.toLocaleString();
+                        clearInterval(counter);
+                    } else {
+                        el.textContent = Math.floor(current).toLocaleString();
+                    }
+                }, 30);
+            };
+            
+            // Iniciar contador cuando el elemento es visible
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        runCounter(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            statNumbers.forEach(stat => {
+                observer.observe(stat);
+            });
+            
+            // Manejo del carrito con Offcanvas en lugar de Modal
+            const cartOffcanvas = new bootstrap.Offcanvas(document.getElementById('cartOffcanvas'));
+            document.getElementById('cartBtn').addEventListener('click', function() {
+                cartOffcanvas.show();
+            });
+            
+            // Botones de cantidad en el carrito
+            const decreaseButtons = document.querySelectorAll('.btn-decrease');
+            const increaseButtons = document.querySelectorAll('.btn-increase');
+            const removeButtons = document.querySelectorAll('.remove-item');
+            
+            decreaseButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const input = this.parentElement.querySelector('.item-quantity');
+                    let value = parseInt(input.value);
+                    if (value > 1) {
+                        input.value = value - 1;
+                        updateCartSummary();
+                    }
+                });
+            });
+            
+            increaseButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const input = this.parentElement.querySelector('.item-quantity');
+                    let value = parseInt(input.value);
+                    input.value = value + 1;
+                    updateCartSummary();
+                });
+            });
+            
+            removeButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const cartItem = this.closest('.cart-item');
+                    cartItem.remove();
+                    updateCartSummary();
+                    updateCartCount();
+                    
+                    // Mostrar mensaje vacío si no hay items
+                    if (document.querySelectorAll('.cart-item').length === 0) {
+                        document.getElementById('cart-empty').style.display = 'block';
+                        document.getElementById('cart-items-container').style.display = 'none';
+                    }
+                });
+            });
+            
+            function updateCartSummary() {
+                // Simplificado para el ejemplo - en una aplicación real calcularía los valores reales
+                const totalElement = document.querySelector('.cart-summary .text-success');
+                let total = 0;
+                
+                document.querySelectorAll('.cart-item').forEach(item => {
+                    const price = parseFloat(item.querySelector('.text-success').textContent.replace('S/ ', '').replace(',', ''));
+                    const quantity = parseInt(item.querySelector('.item-quantity').value);
+                    total += price * quantity;
+                });
+                
+                document.querySelector('.cart-summary div:first-child span:last-child').textContent = `S/ ${total.toLocaleString('es-PE', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+                totalElement.textContent = `S/ ${total.toLocaleString('es-PE', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+            }
+            
+            function updateCartCount() {
+                const count = document.querySelectorAll('.cart-item').length;
+                const cartCountElement = document.getElementById('cart-count');
+                
+                if (count > 0) {
+                    cartCountElement.textContent = count;
+                    cartCountElement.style.display = 'inline-block';
+                } else {
+                    cartCountElement.style.display = 'none';
+                }
+            }
+            /* Script para activar animaciones */
+document.addEventListener('DOMContentLoaded', function() {
+    // Inicializar animaciones
+    const animatedElements = document.querySelectorAll('.animate-fade-in');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const delay = entry.target.getAttribute('data-delay') || 0;
+                setTimeout(() => {
+                    entry.target.classList.add('active');
+                }, delay);
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+            // Añadir al carrito desde productos destacados
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartToast = new bootstrap.Toast(document.getElementById('cartToast'));
+            
+            addToCartButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const name = this.getAttribute('data-name');
+                    document.getElementById('toast-message').textContent = `${name} añadido al carrito`;
+                    cartToast.show();
+                    
+                    // Incrementar contador de carrito
+                    const cartCount = document.getElementById('cart-count');
+                    cartCount.textContent = parseInt(cartCount.textContent) + 1;
+                    cartCount.style.display = 'inline-block';
+                });
+            });
+            
+            // Manejo del login/registro con Offcanvas 
+            const loginOffcanvas = new bootstrap.Offcanvas(document.getElementById('loginOffcanvas'));
+            document.getElementById('loginBtn').addEventListener('click', function() {
+                loginOffcanvas.show();
+            });
+            
+            // Alternar visibilidad de contraseña
+            const togglePasswordButtons = document.querySelectorAll('.toggle-password');
+            
+            togglePasswordButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const input = this.previousElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    if (input.type === 'password') {
+                        input.type = 'text';
+                        icon.classList.remove('fa-eye');
+                        icon.classList.add('fa-eye-slash');
+                    } else {
+                        input.type = 'password';
+                        icon.classList.remove('fa-eye-slash');
+                        icon.classList.add('fa-eye');
+                    }
+                });
+            });
+            
+            // Validación del formulario de login
+            document.getElementById('loginForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = document.getElementById('loginEmail').value;
+                const password = document.getElementById('loginPassword').value;
+                
+                if (!email || !password) {
+                    showAlert('Por favor completa todos los campos', 'danger');
+                    return;
+                }
+                
+                // Simulación de login exitoso (en una app real esto iría al servidor)
+                showAlert('Inicio de sesión exitoso', 'success');
+                setTimeout(() => {
+                    loginOffcanvas.hide();
+                }, 1500);
+            });
+            
+            // Validación del formulario de registro
+            document.getElementById('registerForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('registerName').value;
+                const lastName = document.getElementById('registerLastName').value;
+                const email = document.getElementById('registerEmail').value;
+                const phone = document.getElementById('registerPhone').value;
+                const password = document.getElementById('registerPassword').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                
+                if (!name || !lastName || !email || !phone || !password || !confirmPassword) {
+                    showAlert('Por favor completa todos los campos', 'danger');
+                    return;
+                }
+                
+                if (password !== confirmPassword) {
+                    showAlert('Las contraseñas no coinciden', 'danger');
+                    return;
+                }
+                
+                // Simulación de registro exitoso
+                showAlert('¡Registro exitoso! Ya puedes iniciar sesión', 'success');
+                setTimeout(() => {
+                    document.getElementById('login-tab').click();
+                }, 1500);
+            });
+            
+            // Verificación de fortaleza de contraseña
+            document.getElementById('registerPassword').addEventListener('input', function() {
+                const password = this.value;
+                const progressBar = document.querySelector('.password-strength .progress-bar');
+                
+                let strength = 0;
+                if (password.length >= 8) strength += 25;
+                if (password.match(/[A-Z]/)) strength += 25;
+                if (password.match(/[a-z]/)) strength += 25;
+                if (password.match(/[0-9]/)) strength += 25;
+                
+                progressBar.style.width = `${strength}%`;
+                
+                if (strength < 50) {
+                    progressBar.className = 'progress-bar bg-danger';
+                } else if (strength < 75) {
+                    progressBar.className = 'progress-bar bg-warning';
+                } else {
+                    progressBar.className = 'progress-bar bg-success';
+                }
+            });
+            
+            function showAlert(message, type) {
+                const alertElement = document.getElementById('login-alert');
+                alertElement.className = `alert alert-${type} alert-dismissible fade show`;
+                alertElement.querySelector('.alert-message').textContent = message;
+                alertElement.classList.remove('d-none');
+                
+                if (type === 'success') {
+                    setTimeout(() => {
+                        alertElement.classList.add('d-none');
+                    }, 3000);
+                }
+            }
+        });
+        // Script para las animaciones y funcionalidad del formulario de contacto
+document.addEventListener('DOMContentLoaded', function() {
+    // Animaciones al hacer scroll
+    const animateElements = document.querySelectorAll('.animate-fade-in');
+    
+    function checkIfInView() {
+        animateElements.forEach(element => {
+            const elementPosition = element.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            // Verificar si el elemento está en el viewport
+            if (elementPosition.top < windowHeight * 0.85) {
+                // Aplicar un retraso si está especificado
+                const delay = element.getAttribute('data-delay') || 0;
+                setTimeout(() => {
+                    element.classList.add('visible');
+                }, delay);
+            }
+        });
+    }
+    
+    // Ejecutar al cargar la página
+    checkIfInView();
+    
+    // Ejecutar al hacer scroll
+    window.addEventListener('scroll', checkIfInView);
+    
+    // Validación del formulario
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Aquí iría la lógica para enviar el formulario
+            // Por ahora, solo mostraremos un mensaje de éxito simulado
+            
+            const formElements = contactForm.elements;
+            let isValid = true;
+            
+            // Validación básica
+            for (let i = 0; i < formElements.length; i++) {
+                if (formElements[i].hasAttribute('required') && !formElements[i].value) {
+                    isValid = false;
+                    formElements[i].classList.add('is-invalid');
+                } else {
+                    formElements[i].classList.remove('is-invalid');
+                }
+            }
+            
+            if (isValid) {
+                // Crear y mostrar mensaje de éxito
+                const successMessage = document.createElement('div');
+                successMessage.className = 'alert alert-success mt-3';
+                successMessage.role = 'alert';
+                successMessage.innerHTML = '<i class="fas fa-check-circle me-2"></i> ¡Mensaje enviado correctamente! Nos pondremos en contacto contigo pronto.';
+                
+                contactForm.appendChild(successMessage);
+                
+                // Resetear el formulario
+                contactForm.reset();
+                
+                // Eliminar el mensaje después de unos segundos
+                setTimeout(() => {
+                    successMessage.remove();
+                }, 5000);
+            }
+        });
+    }
+    
+    // Efecto hover en las tarjetas de contacto
+    const contactCards = document.querySelectorAll('.contact-info, .contact-form, .map-container');
+    
+    contactCards.forEach(card => {
+        card.addEventListener('mouseover', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.boxShadow = '0 18px 40px rgba(0, 0, 0, 0.12)';
+        });
+        
+        card.addEventListener('mouseout', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '0 15px 35px rgba(0, 0, 0, 0.08)';
+        });
+    });
+});
+    </script>
+</body>
+</html>

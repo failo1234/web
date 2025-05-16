@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Sal y fe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <style>
+         :root {
+            --primary: #5c2416;
+            --secondary: #ac782b;
+            --accent: #ff9800;
+            --dark: #101827;
+            --light: #f8f9fa;
+        }
+        
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        
+/* Header mejorado */
+    /* Header elegante y llamativo */
+    .navbar-brand {
+        font-weight: 800;
+        font-size: 2rem;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: #fff;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s ease;
+    }
+    
+    .navbar-brand:hover {
+        transform: scale(1.05);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .header-premium {
+        background: linear-gradient(135deg, #8b4513 0%, #d4a95c 100%);
+        box-shadow: 0 4px 15px rgba(139, 69, 19, 0.7);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .header-premium::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgogIDxmaWx0ZXIgaWQ9Im5vaXNlIj4KICAgIDxmZVR1cmJ1bGVuY2UgdHlwZT0iZnJhY3RhbE5vaXNlIiBiYXNlRnJlcXVlbmN5PSIwLjA1IiBudW1PY3RhdmVzPSIyIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIj48L2ZlVHVyYnVsZW5jZT4KICAgIDxmZURpZmZ1c2VMaWdodGluZyBsaWdodGluZy1jb2xvcj0iI2ZmZiIgc3VyZmFjZVNjYWxlPSIwLjUiPgogICAgICA8ZmVEaXN0YW50TGlnaHQgYXppbXV0aD0iNDUiIGVsZXZhdGlvbj0iNjAiPjwvZmVEaXN0YW50TGlnaHQ+CiAgICA8L2ZlRGlmZnVzZUxpZ2h0aW5nPgogICAgPGZlQmxlbmQgbW9kZT0ib3ZlcmxheSI+PC9mZUJsZW5kPgogIDwvZmlsdGVyPgogIDxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNub2lzZSkiIG9wYWNpdHk9IjAuMDUiPjwvcmVjdD4KPC9zdmc+') repeat;
+        opacity: 0.5;
+        z-index: 0;
+    }
+    
+    .nav-link {
+        font-weight: 600;
+        font-size: 1.05rem;
+        margin: 0 12px;
+        padding: 8px 5px;
+        transition: all 0.4s ease;
+        position: relative;
+        z-index: 1;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .nav-link::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background: #fff;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        border-radius: 2px;
+        box-shadow: 0 1px 5px rgba(255, 255, 255, 0.7);
+    }
+    
+    .nav-link:hover {
+        color: #ffffff;
+        transform: translateY(-2px);
+    }
+    
+    .nav-link:hover::before {
+        width: 100%;
+    }
+    
+    .nav-link.active {
+        color: #ffffff;
+        font-weight: 700;
+    }
+    
+    .nav-link.active::before {
+        width: 80%;
+        background: #ffffff;
+        height: 3px;
+    }
+    
+    .brand-container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 60px;
+        padding: 5px 15px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        transition: all 0.4s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .brand-container:hover {
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    
+    .logo-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .brand-container:hover .logo-img {
+        transform: rotate(5deg) scale(1.05);
+    }
+    
+    .btn-contacto {
+        border-radius: 50px;
+        padding: 10px 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.4s ease;
+        border: 2px solid #ffffff;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+    
+    .btn-contacto:hover {
+        background: #ffffff;
+        color: #8b4513;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+    
+    @media (max-width: 991px) {
+        .navbar-collapse {
+            background: rgba(139, 69, 19, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-link {
+            margin: 10px 0;
+            text-align: center;
+        }
+        
+        .nav-link::before {
+            bottom: -5px;
+        }
+    }
+        
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            height: 60vh;
+            min-height: 300px;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.7);
+        }
+        
+        .hero-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1;
+        }
+        
+        .hero-heading {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.3);
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-subheading {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1.2s ease;
+        }
+        
+        /* Estilos para los productos */
+        .product-filter {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+        
+        .filter-title {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .filter-item {
+            display: block;
+            padding: 8px 15px;
+            margin: 5px 0;
+            border-radius: 50px;
+            color: var(--dark);
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .filter-item:hover, .filter-item.active {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .category-icon {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .product-card {
+    height: 100%;
+    min-height: 580px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+.product-card:hover {
+    transform: scale(1.03);
+    border-color: #ffc107;
+}
+.product-img {
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+        .product-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        .product-title {
+            font-weight: 600;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .product-price {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .price-old {
+            text-decoration: line-through;
+            color: #adb5bd;
+            font-size: 0.9rem;
+        }
+        
+        .product-rating {
+            color: #ffc107;
+        }
+        
+        .quick-view {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50px;
+            padding: 8px 20px;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .product-card:hover .quick-view {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .product-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        
+        .wishlist-btn {
+            background: none;
+            border: none;
+            color: #dc3545;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+        
+        .wishlist-btn:hover {
+            transform: scale(1.2);
+        }
+        
+        .cart-btn {
+            flex-grow: 1;
+            margin-left: 10px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            border: none;
+            color: white;
+            border-radius: 50px;
+            padding: 8px 15px;
+            transition: all 0.3s;
+        }
+        
+        .cart-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(172, 120, 43, 0.3);
+        }
+        
+        /* Pagination */
+        .pagination .page-item .page-link {
+            color: var(--primary);
+            border: none;
+            margin: 0 5px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .pagination .page-item.active .page-link {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+        }
+        
+        .pagination .page-item .page-link:hover {
+            background-color: rgba(172, 120, 43, 0.1);
+        }
+        
+        /* Newsletter Section */
+        .newsletter-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 60px 0;
+            margin-top: 60px;
+        }
+        
+        .newsletter-heading {
+            color: white;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .newsletter-subheading {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+        }
+        
+        .newsletter-form {
+            background: white;
+            border-radius: 50px;
+            overflow: hidden;
+            padding: 5px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .newsletter-input {
+            border: none;
+            outline: none;
+            padding: 15px 20px;
+            background: none;
+        }
+        
+        .newsletter-btn {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 15px 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .newsletter-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Footer */
+        .arabic-theme-footer {
+            background-color: var(--dark);
+            color: var(--light);
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNMzAgMTVMMTUgMzBsMTUgMTUgMTUtMTV6IiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9zdmc+');
+        }
+        
+        .decorative-pattern {
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNMzAgMTVMMTUgMzBsMTUgMTUgMTUtMTV6IiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9zdmc+');
+        }
+
+        .logo-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .text-gold {
+            color: var(--secondary) !important;
+        }
+        
+        .arabic-font {
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 1px;
+        }
+        
+        .arabic-subtitle {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .arabic-subtitle:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(to right, var(--secondary), transparent);
+        }
+        
+        .arabic-description {
+            line-height: 1.8;
+        }
+        
+        .arabic-list li {
+            transition: all 0.3s ease;
+        }
+        
+        .arabic-list li:hover {
+            transform: translateX(5px);
+        }
+        
+        .arabic-input {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .arabic-input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .arabic-contact-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .btn-accent-soft {
+            background-color: rgba(255, 152, 0, 0.2);
+            color: var(--accent);
+        }
+        
+        .btn-gold-soft {
+            background-color: rgba(172, 120, 43, 0.2);
+            color: var(--secondary);
+        }
+        
+        .arabic-social-container {
+            position: relative;
+            padding: 15px 0;
+        }
+        
+        .arabic-social-container:before, .arabic-social-container:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 35%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+        }
+        
+        .arabic-social-container:before {
+            left: 0;
+        }
+        
+        .arabic-social-container:after {
+            right: 0;
+        }
+        
+        .arabic-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+        }
+        
+        .ornament {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 20px;
+            background-color: var(--dark);
+            z-index: 1;
+            text-align: center;
+        }
+        
+        .ornament:before {
+            content: '❖';
+            color: var(--secondary);
+            font-size: 14px;
+            line-height: 20px;
+        }
+        
+        .back-to-top {
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-icon:hover {
+            transform: rotate(15deg);
+        }
+        
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-heading {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 50vh;
+            }
+            .hero-heading {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header mejorado y llamativo -->
+<header class="header-premium py-3 sticky-top">
+    <div class="container position-relative" style="z-index: 1;">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container-fluid p-0">
+                <a class="navbar-brand d-flex align-items-center brand-container" href="index.html">
+                    <img src="https://scontent.flim18-3.fna.fbcdn.net/v/t1.15752-9/494576865_622996340769087_1607606692222973774_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fdiqjjuT-yQQ7kNvwHDF2Br&_nc_oc=AdnBwXT1azsdJ0cZD4wMGTRRtm0_Tp-5aBbz8z4yLE-U9kds6aRWUxjnMYOWpxIwHM8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-3.fna&oh=03_Q7cD2AEa6tRZWsaN-a03AeUUJMFn4akA9F5-R-Ydp4gVp2xwOQ&oe=683B565E" 
+                         alt="Sal y Fe Logo" class="me-3 logo-img">
+                    <span class="brand-text">Sal y Fe</span>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fas fa-home me-1"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">
+                                <i class="fas fa-hands-helping me-1"></i> Servicios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">
+                                <i class="fas fa-address-card me-1"></i> Contactos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">
+                                <i class="fas fa-shopping-basket me-1"></i> Productos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="d-none d-lg-block">
+                    <a href="https://wa.me/51991629785?text=Hola%2C%20quiero%20saber%20más%20sobre%20la%20comida%20árabe%20que%20ofrecen" class="btn btn-contacto">
+                        <i class="fas fa-phone-alt me-2"></i>Contáctanos
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="https://comidasegipcias.com/wp-content/uploads/2019/09/mamul-de-datiles.jpeg" alt="Productos Árabes" class="hero-bg">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-6 hero-content text-white">
+                    <h1 class="hero-heading">Nuestros<span class="text-warning"> Productos</span></h1>
+                    <p class="hero-subheading">Descubre la auténtica esencia de la cocina árabe con nuestra selección premium</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar de filtros -->
+                <div class="col-lg-3 mb-4">
+                    <div class="product-filter sticky-lg-top" style="top: 100px;">
+                        <h4 class="filter-title mb-4">Categorías</h4>
+                        <a href="productos.html" class="filter-item active"><i class="fas fa-utensils category-icon"></i> Todos los productos</a>
+                        <a href="carnes.html" class="filter-item"><i class="fas fa-drumstick-bite category-icon"></i> CARNES</a>
+                        <a href="ensaladas.html" class="filter-item"><i class="fas fa-leaf category-icon"></i>ENSALADAS</a>
+                        <a href="platos.html" class="filter-item"><i class="fas fa-bread-slice category-icon"></i> PLATOS PRINCIPALES</a>
+                        <a href="entradas.html" class="filter-item"><i class="fas fa-cookie category-icon"></i> ENTRADAS</a>
+                        <a href="postres.html" class="filter-item"><i class="fas fa-glass-cheers category-icon"></i> POSTRES</a>
+                        
+                        <hr class="my-4">
+                        
+                        <h4 class="filter-title mb-4">Filtrar por</h4>
+                        <div class="mb-3">
+                            <h6 class="mb-2">Precio</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="price1">
+                                <label class="form-check-label" for="price1">
+                                    S/0 - S/25
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="price2">
+                                <label class="form-check-label" for="price2">
+                                    S/25 - S/50
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="price3">
+                                <label class="form-check-label" for="price3">
+                                    S/50 - S/100
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="price4">
+                                <label class="form-check-label" for="price4">
+                                    Más de S/100
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6 class="mb-2">Disponibilidad</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="stock1" checked>
+                                <label class="form-check-label" for="stock1">
+                                    En stock
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="stock2">
+                                <label class="form-check-label" for="stock2">
+                                    Por encargo
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h6 class="mb-2">Especiales</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="special1">
+                                <label class="form-check-label" for="special1">
+                                    Vegetariano
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="special2">
+                                <label class="form-check-label" for="special2">
+                                    Sin gluten
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="special3">
+                                <label class="form-check-label" for="special3">
+                                    Comida halal
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-tech w-100 mt-3">
+                            <i class="fas fa-filter me-2"></i> Aplicar filtros
+                        </button>
+                    </div>
+                </div>
+                
+
+                    
+<!-- Lista de productos -->
+<div class="col-lg-9">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+        <h2 class="mb-0">Todos los productos <span class="badge bg-secondary">8</span></h2>
+        <div class="d-flex align-items-center mt-2 mt-md-0">
+            <div class="dropdown me-3">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ordenar por
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+                    <li><a class="dropdown-item" href="#">Más recientes</a></li>
+                    <li><a class="dropdown-item" href="#">Precio: de menor a mayor</a></li>
+                    <li><a class="dropdown-item" href="#">Precio: de mayor a menor</a></li>
+                    <li><a class="dropdown-item" href="#">Popularidad</a></li>
+                </ul>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-outline-secondary">
+                    <i class="fas fa-th"></i>
+                </button>
+                <button type="button" class="btn btn-outline-secondary">
+                    <i class="fas fa-list"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row g-4">
+        <!-- ENTRADAS -->
+        <!-- Producto 1 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <div class="position-relative">
+                    <img src="https://scontent.flim18-1.fna.fbcdn.net/v/t1.15752-9/495048823_679981108332979_819716129300454100_n.png?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=zNnCDuA7ZOQQ7kNvwG8aLAM&_nc_oc=AdlkxJDnX6SY2DffX-Z4-NxFh55wKSLzGsg2d3ewQLsY4kkjTiuxotvWwY5-cCaKP5I&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-1.fna&oh=03_Q7cD2QGpjMGO7ZlaUE2m-pLvZBzdAZ1I9lJQT7gcyXz2wHS49g&oe=6842F6CA" class="card-img-top product-img" alt="Kibee">
+                    <span class="badge bg-danger product-badge">Destacado</span>
+                    <div class="quick-view">
+                        <a href="#" class="btn btn-sm btn-light">Vista rápida</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="product-title">Baclawa</h5>
+                    <div class="product-rating mb-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="text-muted ms-2">(23)</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <span class="product-price">S/4.00 unidad</span>
+                        </div>
+                        <span class="badge bg-success">En stock</span>
+                    </div>
+                    <p class="text-muted small mb-3">Dulce tradicional árabe elaborado con finas capas de masa filo, rellenas de una mezcla de frutos secos como nueces, almendras o pistachos, y bañadas en un almíbar de miel y agua de azahar.</p>
+                    <div class="product-actions">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="cart-btn">
+                            <i class="fas fa-cart-plus me-2"></i> Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Producto 2 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <div class="position-relative">
+                    <img src="https://scontent.flim18-3.fna.fbcdn.net/v/t1.15752-9/494573183_678233111485031_4876842669070256242_n.png?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=gfoZEaWOabwQ7kNvwFtSfQK&_nc_oc=Adnu-Qoj6SBGGAL8UlwYtjYLitUg8m5cewtYAJvrfpzEPPv12wfd4fotkXfkcdY5Ebs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.flim18-3.fna&oh=03_Q7cD2QG26c0MegIuvdOu4F8eCDVR2U_Nt-sd48DxddplhDm-hg&oe=6844D416" class="card-img-top product-img" alt="Falafel">
+                    <span class="badge bg-warning product-badge">Vegano</span>
+                    <div class="quick-view">
+                        <a href="#" class="btn btn-sm btn-light">Vista rápida</a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="product-title">Mamul</h5>
+                    <div class="product-rating mb-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="text-muted ms-2">(45)</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div>
+                            <span class="product-price">S/4.00 unidad</span>
+                        </div>
+                        <span class="badge bg-success">En stock</span>
+                    </div>
+                    <p class="text-muted small mb-3">Galleta tradicional elaborada con una masa suave y delicada, rellena de dátiles y nueces picadas.
+Perfume sutil de especias como canela y agua de azahar que evocan la repostería árabe clásica.
+Ideal para acompañar el café o como un dulce regalo artesanal.</p>
+                    <div class="product-actions">
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="cart-btn">
+                            <i class="fas fa-cart-plus me-2"></i> Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
